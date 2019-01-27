@@ -3,31 +3,47 @@
 <head>
     <meta charset="UTF-8" />
     <title>Robbie Jakob-Whitworth</title>
-    <link rel="stylesheet" href="highlight/styles/atom-one-dark-reasonable.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="highlight/styles/atom-one-light.css" />
     <script src="highlight/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
     <style type="text/css">
+        body {
+            background: #3c4142;
+        }
+
         main {
             padding: 40px;
-            max-width: 600px;
+            max-width: 700px;
             margin: auto;
+        }
+
+        code {
+            font-family: 'Roboto Mono', monospace;
+            border-radius: 10px;
+        }
+
+        .hljs-string, .hljs-title, .hljs-comment {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 <main>
 <pre>
-<code>
+<code>import 'robbiejw' from 'linkedin';
 import 'robzwolf' from 'github';
 import 'robzwolf' from 'devpost';
-import 'robbiejw' from 'linkedin';
+import 'design-portfolio' from 'tumblr';
+import 'download-as-pdf' from 'cv';
 
 class Robbie {
   constructor() {
     this.fullname = 'Robbie Jakob-Whitworth';
   }
 
+  // Work Experience and Employment History
   experience() {
     const juniordev = {
       what : 'Junior PHP Developer (Industrial Placement Year)',
@@ -41,9 +57,11 @@ class Robbie {
       what : 'Summer Insight Programme',
       where: 'Civil Service'
     }
+
     return {juniordev, webdev, summerinsight};
   }
 
+  // Education History
   education() {
     const degree = {
       what : 'BSc Natural Sciences (Computer Science and Maths)'
@@ -54,9 +72,11 @@ class Robbie {
       what : 'Appleby Grammar School',
       where: 'Cumbria'
     };
+
     return {degree, school};
   }
 
+  // Relevant Extracurricular Activities
   extracurriculars() {
     const compsoc = {
       what : 'President',
@@ -66,9 +86,11 @@ class Robbie {
       what : 'AWS Prize Winner',
       where: 'Hack Cambridge'
     };
+
     return {compsoc, hackcambridge};
   }
-    
+
+  // Technical Skillset and Abilities
   technicalskills() {
     const fluent = [
       'Python', 'JavaScript', 'Git', 'HTML5', 'CSS3',
@@ -83,12 +105,14 @@ class Robbie {
     return {fluent, experiencewith};
   }
 
+  // Contact Details
   contact() {
     const email = 'robzwolf@gmail.com';
     const website = 'robbie.xyz';
     const github = 'robzwolf';
     const linkedin = 'robbiejw';
     const location = 'Durham, United Kingdom';
+
     return {email, website, github, linkedin, location};
   }
 }
