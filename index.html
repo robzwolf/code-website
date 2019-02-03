@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <title>Robbie Jakob-Whitworth</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet" />
-    <link rel="stylesheet" href="highlight/styles/railscasts.css" />
+    <link rel="stylesheet" href="highlight/styles/rainbow.css" />
+    <!-- railscasts -->
     <script src="highlight/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -21,6 +22,7 @@
 
         .code-container {
             font-family: 'Roboto Mono', monospace;
+            font-size: 14px;
             border-radius: 10px;
             box-shadow: 0 0 12px 4px rgba(0,0,0,.2);
             padding: 1em;
@@ -29,18 +31,26 @@
         .hljs-string, .hljs-title, .hljs-comment {
             font-weight: bold;
         }
+
+        .hljs-string {
+          color: #fc6;
+          font-size: 16px;
+        }
+
+        .hljs-comment {
+          color: #7df6c2;
+          font-size: 22px;
+        }
+
+        .hljs-class .hljs-title {
+          color: #7bafd1;
+        }
     </style>
 </head>
 <body>
 <main>
 <pre>
-<code class="code-container">import 'robbiejw' from 'linkedin';
-import 'robzwolf' from 'github';
-import 'robzwolf' from 'devpost';
-import 'design-portfolio' from 'tumblr';
-import 'download-as-pdf' from 'cv';
-
-class Robbie {
+<code class="code-container">class Robbie {
   constructor() {
     this.fullname = 'Robbie Jakob-Whitworth';
   }
